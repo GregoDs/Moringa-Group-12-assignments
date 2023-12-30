@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+<form id="studentsGradeGeneratorForm">
+    <h4 id="titleTag">Student's Grade Generator</h4>
+       <p>Enter Student's Name :</p>
+          <input id="studentsNameBox"></input>
+              
+        <p>Enter Student's Grade :</p>
+           <input type="text" id="studentsGradeBox"></input>
+                 <btn id="submitBtn">Submit Student's Details</btn>
+</form>  
+<form id="studentsDetailsWindow">
+
+   <h2 id="outputName"></h2>
+   <h3 id="outputGrade"></h3>
+   <h4 id="congratulationsBox"></h4>
+</form>
+<script type="text/javascript" src="js/index.js"></script>
+<!--  Note an error appears if the js script is run before the button is created  THAT IS WHY i'VE Written it here-->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script>
+
+</body>
+</html>
