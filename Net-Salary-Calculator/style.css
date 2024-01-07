@@ -1,0 +1,81 @@
+#calculator{
+align-content: center;
+padding: 10px;
+border-color: #333;
+border-style: solid;
+border-width: thin;
+background-color: rgb(171, 213, 240);
+ border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#grossSalaryBox{
+    font-size: 18px; 
+    padding: 8px; 
+    border-radius: 10px; 
+    background-color: #f7f7f7;
+    border: 1px solid #ccc; 
+    color: #333; 
+}
+#benefitsBox{
+    font-size: 18px; 
+    padding: 8px; 
+    border-radius: 10px; 
+    background-color: #f7f7f7;
+    border: 1px solid #ccc; 
+    color: #333; 
+}
+#pensionBox{
+    font-size: 18px; 
+    padding: 8px; 
+    border-radius: 10px; 
+    background-color: #f7f7f7;
+    border: 1px solid #ccc; 
+    color: #333; 
+}
+#allowableDeductionsBox{
+    font-size: 18px; 
+    padding: 8px; 
+    border-radius: 10px; 
+    background-color: #f7f7f7;
+    border: 1px solid #ccc; 
+    color: #333; 
+}
+#netSummaryForm{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    }
+#calculateButton{
+    align-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(211, 72, 72); 
+    border: none;
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+.formContainer{
+    align-content: center;
+    padding: 10px;
+    border-color: #333;
+    border-style: solid;
+    border-width: thin;
+   
+     border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  

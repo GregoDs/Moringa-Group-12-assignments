@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="./style.css" >
+    </head>
+    <body>
+
+
+        <div class="formContainer">
+        <form id="netPayForm" >
+            <table align="center" cellpadding="5" cellspacing="0" id="calculator">
+               <tbody><tr>
+                  <th height="40" colspan="3" valign="top"> NET PAY CALCULATOR<br>
+                     Jul 2023-Jun 2024</th>
+               </tr>
+               <tr>
+                  <td align="right">Gross Salary</td>
+                  <td align="right"><input  type="text" class="numField" id="grossSalaryBox" ></td>
+               </tr>
+               <tr>
+                  <td align="right">Non-Cash Benefits </td>
+                  <td align="right"><input type="text" class="numField" id="benefitsBox" value="0"></td>
+               </tr>
+               <tr>
+                  <td align="right">Pension Contribution<br></td>
+                  <td align="right"><input  type="text" class="numField" id="pensionBox" value="0"></td>        
+               </tr>
+               <tr>
+                  <td align="right">Other Allowable Deductions<br></td>
+                  <td align="right"><input  type="text" class="numField" id="allowableDeductionsBox" value="0"></td>
+               </tr>
+               <tr>
+                  <td colspan="3"><hr class="separator"></td>
+                  </tr>
+               <tr>
+                  <td colspan="2" align="right">NHIF eligibility</td>
+                  <td align="left"><input type="checkbox" id="ignoreBenefitsCheckbox" value="1" checked="checked"></td>
+               </tr>
+               <tr>
+                  <td colspan="2" align="right">NSSF Tier I &amp; II </td>
+                  <td align="left"><input id="bothTiersNssfchk" type="radio" value="BothTiers" checked="checked"></td>
+               </tr>
+               <tr>
+                  <td colspan="2" align="right">NSSF Tier I only </td>
+                  <td align="left"><input name="nssfTier1chk" type="radio" value="TierI"></td>
+               </tr>
+               <td><input  type="submit" id="calculateButton" value="Calculate"></td>
+            </tbody></table>
+           </form>
+        </div>
+
+
+        <div class="formContainer">
+           <form id="netSummaryForm">
+            <table><tbody><tr>
+                <th height="40" colspan="3" valign="top">NET PAY CALCULATOR<br>
+                Jul 2023-Jun 2024</th>
+             </tr>
+             <tr>
+                <td><b>Gross Salary</b></td>
+                <td align="right" id="grossSalaryResult"></td>
+             </tr>
+             <tr>
+                <td>Deductions:</td>
+             </tr>
+             <tr>
+                <td>PAYE</td>
+                <td align="right"><input type="hidden" id="payeResult" value="0"></td>
+             </tr>
+             <tr>
+                <td>NSSF (Tier I)</td>
+                <td align="right"><input type="hidden"  id="Nssf1Result" value="0"></td>
+             </tr>
+              <tr>
+                <td>NHIF</td>
+                <td align="right"><input type="hidden"  id="NhifResult" value="0"></td>
+             </tr>
+            <tr >
+                <td><b>Total Deductions</b></td>
+                <td align="right"><b></b>
+                   <input type="hidden" id="totalDeductions" value="0"></td>
+             </tr>
+             <tr >
+                <td><b>Net Salary</b></td>
+                <td align="right"><b></b>
+                   <input type="hidden"  id="netSalaryResult" value="0"></td>
+             </tr>
+             <tr>
+                <td colspan="3"><hr class="separator"></td>
+             </tr>
+             <tr>
+                <td >PAYE Information: </td>
+             </tr>
+             <tr>
+                <td width="146">Gross Salary </td>
+                <td width="93" align="right" ><input type="hidden" id="grossSalaryResult" value="0"></td>
+             </tr>
+             <tr>
+                <td >Allowable Deductions</td>
+                <td align="right"><input type="hidden" id="allowableDeductionsBox" value="0"></td>
+             </tr>
+             <tr>
+                <td>Taxable Pay</td>
+                <td height="30" align="right"><input type="hidden" id="taxablePayResult" value="0"></td>
+             </tr>
+          </tbody></table>
+           </form>
+        </div>
+
+<script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
