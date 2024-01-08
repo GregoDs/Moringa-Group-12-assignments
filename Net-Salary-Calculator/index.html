@@ -2,6 +2,7 @@
 <html>
     <head>
          <link rel="stylesheet" href="./style.css" >
+         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
 
@@ -65,25 +66,23 @@
              </tr>
              <tr>
                 <td>PAYE</td>
-                <td align="right"><input type="hidden" id="payeResult" value="0"></td>
+                <td align="right" id="payeResult" value="0"></td>
              </tr>
              <tr>
                 <td>NSSF (Tier I)</td>
-                <td align="right"><input type="hidden"  id="Nssf1Result" value="0"></td>
+                <td align="right" id="Nssf1Result" value="0"></td>
              </tr>
               <tr>
                 <td>NHIF</td>
-                <td align="right"><input type="hidden"  id="NhifResult" value="0"></td>
+                <td align="right"  id="NhifResult" value="0"></td>
              </tr>
             <tr >
                 <td><b>Total Deductions</b></td>
-                <td align="right"><b></b>
-                   <input type="hidden" id="totalDeductions" value="0"></td>
+                <td align="right" id="totalDeductions" value="0"></td>
              </tr>
              <tr >
                 <td><b>Net Salary</b></td>
-                <td align="right"><b></b>
-                   <input type="hidden"  id="netSalaryResult" value="0"></td>
+                <td align="right"id="netSalaryResult" value="0"></td>
              </tr>
              <tr>
                 <td colspan="3"><hr class="separator"></td>
@@ -107,6 +106,7 @@
            </form>
         </div>
 
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
     </body>
 </html>
