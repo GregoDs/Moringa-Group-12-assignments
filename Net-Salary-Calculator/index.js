@@ -1,5 +1,7 @@
 const calculateButton = document.getElementById('calculateButton');
-calculateButton.addEventListener('click',function(){
+calculateButton.addEventListener('click',function(event){
+
+    event.preventDefault();
 
     console.log('Button Clicked');
 
@@ -22,29 +24,35 @@ const grossSalaryResult = grossSalaryBox;
 
     //console.log(slabs);
     //calculate tax based on income and slabs
-    let  tax=0;
     
-    for(let i=1; i < slabs.length; i++){
-
-        const lowerLimit = i === 0 ? 0 : slabs[i - 1];
-        const upperLimit = slabs[i];
-        const rate = rates[i];
-        const lowerLimitTax = (lowerLimit)*rate;
-        let  tax = ((upperLimit - lowerLimit) * rate) + lowerLimitTax;
-
-        if (grossSalaryResult <= lowerLimit){
-            break;
-        } else if (grossSalaryResult <= upperLimit) {
-            tax = ((upperLimit - lowerLimit) * rate) + lowerLimitTax;
-
-            console.log(lowerLimit);
-            break;
-        } else {
-            tax = ((upperLimit - lowerLimit) * rate) + lowerLimitTax;
+       
+                
+    if (grossSalaryResult <= slab1) {
+        Payee1 = grossSalaryResult * 0.1;
+        incomeTax = Payee1;
+        // console.log(incomeTax);
+        //document.getElementById('payeResult').innerHTML = Payee;
+    } else if (grossSalaryResult <= slab2 - 1) {
+        // Calculate Payee2 without the additional inner condition
+        Payee2 =  (grossSalaryResult - slab1) * 0.25;
+        console.log(Payee2);
         
+        }else if (grossSalaryResult <= (slab3 -1 )){
+            if(grossSalaryResult > slab2){
+                Payee3 = (grossSalaryResult - slab2)* 0.30 ;
+                console.log(Payee3);
+                incomeTax = (Payee3 + Payee2 +Payee1)
+                    console.log(incomeTax); }
+
+        }else if (grossSalaryResult <= (slab4 -1)){
+            if(grossSalaryResult > slab3){
+                Payee4 = (grossSalaryResult - slab3) * 0.325 ;
+                console.log(Payee4); }
         }
-        
-    }
-    const taxDue = tax;
-    console.log(`Tax due: ${taxDue}`);
+        else{          
+            Payee5 = grossSalaryResult * 0.35;
+            console.log(Payee5);
+        }
+    
+    
 })
